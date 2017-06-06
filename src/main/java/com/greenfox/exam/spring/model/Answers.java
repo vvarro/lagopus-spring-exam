@@ -1,10 +1,11 @@
 package com.greenfox.exam.spring.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Answers {
   int id;
-  Iterable<Answer> answers;
+  List<Answer> answers;
 
   public Answers() {
     this.answers = new ArrayList<>();
@@ -14,7 +15,7 @@ public class Answers {
     return answers;
   }
 
-  public void setAnswers(Iterable<Answer> answers) {
+  public void setAnswers(List<Answer> answers) {
     this.answers = answers;
   }
 
