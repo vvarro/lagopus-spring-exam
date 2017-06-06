@@ -6,7 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ProjectList {
-Iterable<Project> projectList;
+
+  Iterable<Project> projectList;
 
   public ProjectList() {
   }

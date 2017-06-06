@@ -8,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Answer {
+
   @GeneratedValue(strategy = GenerationType.AUTO)
   int id;
   String answer;

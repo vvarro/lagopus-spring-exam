@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Answers {
+
   int id;
   List<Answer> answers;
 
@@ -11,7 +12,7 @@ public class Answers {
     this.answers = new ArrayList<>();
   }
 
-  public Iterable<Answer> getAnswers() {
+  public List<Answer> getAnswers() {
     return answers;
   }
 
@@ -25,5 +26,9 @@ public class Answers {
 
   public void setId(int id) {
     this.id = id;
+  }
+
+  public Answer getAnswer(int id) {
+    return answers.get(id);
   }
 }

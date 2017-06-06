@@ -21,10 +21,10 @@ public class Question {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  @JsonSerialize(include= NON_NULL)
+  @JsonSerialize(include = NON_NULL)
   long id;
   String question;
-  @JsonSerialize(include= NON_NULL)
+  @JsonSerialize(include = NON_NULL)
   String answer;
 
   public Question() {

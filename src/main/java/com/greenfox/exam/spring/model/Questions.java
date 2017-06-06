@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Questions {
+
   long id;
   List<Question> questions;
 
