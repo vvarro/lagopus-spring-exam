@@ -22,4 +22,9 @@ public class Question {
 
   public Question() {
   }
+
+  public Question(String question, Answer answer) {
+    this.question = question;
+    this.answer = answer;
+  }
 }
