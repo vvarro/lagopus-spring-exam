@@ -2,21 +2,28 @@ package com.greenfox.exam.spring.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
+@Table(name = "quiz")
+@Entity
 @Component
 public class Questions {
 
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   int id;
   List<Question> questions;
 
   public Questions() {
-    this.id = 1;
     this.questions = new ArrayList<>();
   }
 
   public Questions(List<Question> questions) {
-    this.id = 1;
     this.questions = questions;
   }
 
