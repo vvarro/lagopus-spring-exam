@@ -37,7 +37,7 @@ public class QuizRestContoller {
         quiz.setQuizId(questions.getId());
         ids[i] = (int) questionRepository.findOne(randId).getId();
         Question question = new Question();
-        question.setId(i + 1);
+        question.setId(questionRepository.findOne(randId).getId());
         question.setQuestion(questionRepository.findOne(randId).getQuestion());
         question.setAnswer(null);
         randQuestions.add(question);
