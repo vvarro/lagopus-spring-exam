@@ -1,10 +1,10 @@
 package com.greenfox.exam.spring.repository;
 
-import com.greenfox.exam.spring.model.Questions;
+import com.greenfox.exam.spring.model.Quiz;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface QuizRepository extends CrudRepository<Questions, Long> {
+public interface QuizRepository extends CrudRepository<Quiz, Long> {
 
 }

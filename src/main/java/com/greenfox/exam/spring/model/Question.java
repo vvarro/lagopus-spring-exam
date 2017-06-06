@@ -10,10 +10,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Component;
 
 @Entity
 @Getter
 @Setter
+@Component
 @Table(name = "questions")
 public class Question {
 
