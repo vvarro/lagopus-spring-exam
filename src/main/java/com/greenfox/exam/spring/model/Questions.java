@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Questions {
-  int id;
+  long id;
   List<Question> questions;
 
   public Questions() {
@@ -20,11 +20,11 @@ public class Questions {
     this.questions = questions;
   }
 
-  public int getId() {
+  public long getId() {
     return id;
   }
 
-  public void setId(int id) {
+  public void setId(long id) {
     this.id = id;
   }
 
